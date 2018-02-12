@@ -24,7 +24,7 @@ public class HomeActivity extends AppCompatActivity implements RecyclerViewClick
         GridLayoutManager manager = new GridLayoutManager(this,2);
         recyclerView.setLayoutManager(manager);
         recyclerView.setHasFixedSize(true);
-        RecyclerAdapter<CategoryObject> adapter = new RecyclerAdapter<>(this,testData(),R.layout.category_item);
+        RecyclerAdapter<CategoryObject> adapter = new RecyclerAdapter<>(this,testData(),R.layout.category_item,this);
         recyclerView.setAdapter(adapter);
 
     }

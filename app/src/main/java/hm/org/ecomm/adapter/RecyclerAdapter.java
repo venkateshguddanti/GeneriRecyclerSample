@@ -26,11 +26,12 @@ public class RecyclerAdapter<T> extends RecyclerView.Adapter<BindingViewHolder> 
     private int layoutID;
     private RecyclerViewClickInterface<T> mClickInterface;
 
-    public RecyclerAdapter(Context mContext,ArrayList<T> items,int layoutID)
+    public RecyclerAdapter(Context mContext,ArrayList<T> items,int layoutID,RecyclerViewClickInterface<T> mClickInterface)
     {
         this.mContext = mContext;
         this.items = items;
         this.layoutID = layoutID;
+        this.mClickInterface = mClickInterface;
     }
 
     @Override
